@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="40dp">
+
+  <LinearLayout
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="Question"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Option 1:" />
+
+      <TextView
+          android:id="@+id/option1TextView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:ems="10"
+          android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Option 2:" />
+
+      <TextView
+          android:id="@+id/option2TextView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:ems="10"
+          android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Option 3:" />
+
+      <TextView
+          android:id="@+id/option3TextView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:ems="10"
+          android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Option 4:" />
+
+      <TextView
+          android:id="@+id/option4TextView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:ems="10"
+          android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="Option 5:" />
+
+      <TextView
+          android:id="@+id/option5TextView"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:ems="10"
+          android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Correct Answer:"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+      <TextView
+          android:id="@+id/correctOptionTextView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="right"
+          android:text="TextView" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/attachTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="No attachment"
+        android:textColor="@android:color/holo_blue_dark"
+        android:onClick=""/>
+
+    <Button
+        android:id="@+id/editQuestionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT QUESTION" />
+
+    <Button
+        android:id="@+id/deleteQuestionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE QUESTION" />
+
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
